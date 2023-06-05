@@ -1,6 +1,6 @@
 import React from 'react';
 // import Head from 'next/head';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import Downlaod from './Downlaod';
 import Back from './Back';
 
@@ -11,22 +11,29 @@ const Resume = () => {
 			<Downlaod />
 			<div className="max-w-[940px] mx-auto p-2 pt-[120px]">
 				<h2 className="text-center">Resume</h2>
-				<div className="bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center">
+				<div className="bg-cyan-600 my-4 p-4 w-full flex justify-between items-center">
 					<h2 className="text-center">Abdulsalam mohammed</h2>
 					<div className="flex">
-						<a
-							href="https://www.linkedin.com/in/ammuftau/"
-							target="_blank"
-							rel="noreferrer"
-						>
-							<FaLinkedinIn size={20} style={{ marginRight: '1rem' }} />
-						</a>
 						<a
 							href="https://github.com/devabdulsalam"
 							target="_blank"
 							rel="noreferrer"
 						>
 							<FaGithub size={20} style={{ marginRight: '1rem' }} />
+						</a>
+						<a
+							href="https://www.linkedin.com/in/abdulsalammmuftua"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<FaLinkedinIn size={20} style={{ marginRight: '1rem' }} />
+						</a>
+						<a
+							href="https://www.twitter.com/abdulsalamm74 "
+							target="_blank"
+							rel="noreferrer"
+						>
+							<FaTwitter size={20} style={{ marginRight: '1rem' }} />
 						</a>
 					</div>
 				</div>
@@ -43,71 +50,83 @@ const Resume = () => {
 						<p>Complex Problem Solving</p>
 					</div>
 				</div>
-				<p>
+				<p className="text-justify">
 					Analytical, innovative, and motivated web development professional
 					with experience in customer service, team leadership, and
 					organizational effectiveness in fast-paced and challenging
-					environments. Adept at developing strategies and driving streamlined
-					operations. Diverse analytical skills, team collaboration, and
-					relationship building. Consummate professional, and motivated leader,
-					with solid interpersonal abilities and complex problem-solving skills.
-					Effective and proven track record of critical thinking, idea
+					environments. with a strong foundation in modern Project Management
+					principles and practices, adept at developing strategies and driving
+					streamlined operations. Diverse analytical skills, team collaboration,
+					and relationship building. Consummate professional, and motivated
+					leader, with solid interpersonal abilities and complex problem-solving
+					skills. Effective and proven track record of critical thinking, idea
 					generation, and optimizing efficiencies.
 				</p>
 
 				{/* Skills */}
 				<div className="text-center py-4">
-					<h5 className="text-center underline text-[18px] py-2">Skills</h5>
+					<h5 className="text-center underline text-[18px] py-2 text-cyan-600">
+						Skills
+					</h5>
 					<p className="py-2">
-						<span className="font-bold">Technical Skills</span>
+						<span className="font-bold text-cyan-600">Technical Skills</span>
 						<span className="px-2">|</span>Front-End Web Developer
 						<span className="px-2">|</span> HTML
 						<span className="px-2">|</span>CSS
+						<span className="px-2">|</span>Tailwind
 						<span className="px-2">|</span>Javascript
 						<span className="px-2">|</span>React
 						<span className="px-2">|</span>Next JS
-						<span className="px-2">|</span>SQL
-						<span className="px-2">|</span>NoSQL
+						<span className="px-2">|</span>Nodejs
 						<span className="px-2">|</span>Redux
-						<span className="px-2">|</span>Tailwind
+						<span className="px-2">|</span>MongoDb
 						<span className="px-2">|</span> Firebase
 						<span className="px-2">|</span> RESTAPI
 					</p>
 					<p className="py-2">
-						<span className="font-bold">Amazon Web Services</span>
-						<span className="px-2">|</span>Amazon Web Services Cloud
-						Practitioner
+						<span className="font-bold text-cyan-600">Project managemnet</span>
+						<span className="px-2">|</span>Agile
+						<span className="px-2">|</span>Kaban
+						<span className="px-2">|</span>Jira
+						<span className="px-2">|</span>Navision,
+						<span className="px-2">|</span>Web-HR
+						<span className="px-2">|</span>Bitrix24
+						<span className="px-2">|</span>Human resource
 					</p>
 				</div>
 
-				<h5 className="text-center underline text-[18px] py-4">
+				<h5 className="text-center underline text-[18px] py-4 text-cyan-600">
 					Professional Experience
 				</h5>
 				{/* Experience */}
 				<div className="py-6">
 					<p className="italic">
-						<span className="font-bold italic">INFINITE TECH</span>
-						<span className="px-2">|</span>Dallas, TX
+						<span className="font-bold italic text-cyan-600">
+							Stem Innovation Hub
+						</span>
+						<span className="px-2">|</span>Kano, Nigeria
 					</p>
 					<p className="py-1 italic">
 						Front End Web Developer & Project Manager (2022 - Current)
 					</p>
 					<ul className="list-disc list-outside px-7 py-1 leading-relaxed">
 						<li>
+							Building reusable components for future use and maintaining
+							software workflow, maintaining github codebase
+						</li>
+						<li>
+							Learned the use of Project/ Software management frameworks and
+							tools such as Agile, Kaban, Jira, Navision, Web-HR, Workable, and
+							Bitrix24 etc.
+						</li>
+						<li>
+							Collaborate, Communicate with project stockholders to implement
+							responsive designs.
+						</li>
+						<li>
+							Optimized Website performance through efficient coding practices.
 							Ensured comprehensive mobile responsive UI layouts with
 							understanding of HTML, CSS, and JavaScript.
-						</li>
-						<li>
-							Troubleshoot issues and concerns, configure operation and analytic
-							plugins, and design changes as needed.
-						</li>
-						<li>
-							Worked directly with a diverse client base to understand and
-							implement multiple technologies and programs.
-						</li>
-						<li>
-							Platform migration managing DNS servers as well as MX records and
-							ensuring a smooth migration process.
 						</li>
 					</ul>
 				</div>
@@ -115,35 +134,84 @@ const Resume = () => {
 				{/* Personal Experience */}
 				<div className="py-6">
 					<p className="italic">
-						<span className="font-bold italic">
-							Teaching & Mentoring Web Development
-						</span>
-						<span className="px-2">|</span>Dallas, TX
+						<p className="italic">
+							<span className="font-bold italic text-cyan-600">
+								Stem Innovation Hub
+							</span>
+							<span className="px-2">|</span>Kano, Nigeria
+						</p>
+					</p>
+					<p className="py-1 italic">Front-end Enginner (2021 - Current)</p>
+					<ul className="list-disc list-outside px-7 py-1 leading-relaxed">
+						<li>
+							Working with cross-functional teams in crafting speedy, intuitive,
+							and inclusive, robust and responsive web solutions.
+						</li>
+						Collaborating with other developers in wire framing of the
+						applications, implementing various user interface maintained the
+						github pull request, review and merging to codebase.
+						<li>
+							Resolving critical frontend issues and optimize application for
+							maximum speed and scalability for optimal user experience.
+						</li>
+						<li>
+							Creating and consumption of Rest APIs for implementing dynamic
+							user interfaces. Developed and maintained user interfaces for web
+							applications.
+						</li>
+						<li>
+							Worked directly with a diverse client base to understand and
+							implement multiple technologies and programs.
+						</li>
+					</ul>
+				</div>
+				{/* Personal Experience */}
+				<div className="py-6">
+					<p className="italic">
+						<p className="italic">
+							<span className="font-bold italic text-cyan-600">
+								Stem Innovation Hub
+							</span>
+							<span className="px-2">|</span>Kano, Nigeria
+						</p>
 					</p>
 					<p className="py-1 italic">
-						Code Commerce - Youtube Channel (2021 - Current)
+						Front- end Developer (internship) (2021 - 2022)
 					</p>
 					<ul className="list-disc list-outside px-7 py-1 leading-relaxed">
 						<li>
-							In 2021 I started “Code Commerce”, a YouTube channel focused on
-							sharing what I’m learning in web development, specifically
-							front-end development.
+							Completed an intensive 1-year full stack web development program
+							at Stemlab Innovation Hub, Kano, focused on equipping participants
+							with comprehensive skills in frontend and backend development.
 						</li>
 						<li>
-							Private 1 on 1 Zoom coaching calls related to web development.
-							More specifically debugging, teaching basic web development
-							concepts and code reviews.
+							Actively participated in Project development discussions,
+							providing valuable input on project/design feasibility and
+							suggesting improvements to enhance user experience.
+						</li>
+						<li>
+							Applied computer science data structures and algorithms to solve
+							computational problems ensuring the data flow within a finite
+							amount of space and time.
+						</li>
+						<li>
+							Gained hands-on experience with JavaScript, CSS, HTML, React,
+							React Hooks, APIs, deployment strategies and tech principles
+							whilst working on team/individual projects, code reviews, and pair
+							programming session. Working with cross-functional teams in
+							crafting speedy, intuitive, and inclusive, robust and responsive
+							web solutions.
 						</li>
 					</ul>
 				</div>
 
 				{/*  */}
-				<h5 className="text-center underline text-[18px] py-4">
+				{/* <h5 className="text-center underline text-[18px] py-4">
 					Other Professional Experience
-				</h5>
+				</h5> */}
 
 				{/* Experience */}
-				<div className="py-6">
+				{/* <div className="py-6">
 					<p className="italic">
 						<span className="font-bold">CITY OF SHERMAN, TX</span>
 						<span className="px-2">|</span>Sherman, TX
@@ -177,7 +245,7 @@ const Resume = () => {
 							Support, among others.
 						</li>
 					</ul>
-				</div>
+				</div> */}
 			</div>
 		</>
 	);

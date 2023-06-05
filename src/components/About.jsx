@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import aboutImg from '../assets/images/bg.jpg';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 const About = () => {
+	useEffect(() => {
+		Aos.init({ duration: 7000 });
+	});
 	const info = [
 		{ text: 'Years experience', count: '02' },
 		{ text: 'Completed Projects', count: '45' },
@@ -14,7 +19,7 @@ const About = () => {
 				</h3>
 				<p className="text-gray-400 my-3 text-lg">My introduction</p>
 				<div className="flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 md:px-10 max-w-6xl mx-auto">
-					<div className="p-2">
+					<div data-aos="fade-left" className="p-2">
 						<div className="text-gray-300 my-3">
 							<p className="text-justify leading-7 text-xl md:w-11/12 mx-auto px-2">
 								I am a creative front-End Developer with over two years of
@@ -45,7 +50,10 @@ const About = () => {
 							</a>
 						</div>
 					</div>
-					<div className="flex-1 md:mt-0 mt-6 flex justify-center items-center">
+					<div
+						data-aos="fade-right"
+						className="flex-1 md:mt-0 mt-6 flex justify-center items-center"
+					>
 						<div className="lg:w-96 h-full relative sm:w-10/12 w-11/12 max-w-sm aboutImg ">
 							<img
 								src={aboutImg}

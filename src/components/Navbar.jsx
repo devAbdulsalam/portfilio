@@ -1,18 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { menuLinks, mobileLinks } from '../data';
 // import Toggle from './Toggle/Toggle';
 
 const Navbar = () => {
 	const [sticky, setSticky] = useState(false);
 	const [open, setOpen] = useState(false);
-	const menuLinks = [
-		{ name: 'HOME', link: '#home' },
-		{ name: 'ABOUT', link: '#about' },
-		{ name: 'SKILLS', link: '#skills' },
-		{ name: 'PROJECTS', link: '#projects' },
-		{ name: 'TESTIMONIALS', link: '#testimonials' },
-		{ name: 'SERVICES', link: '#services' },
-		{ name: 'CONTACT', link: '#contact' },
-	];
+
 	useEffect(() => {
 		window.addEventListener('scroll', () => {
 			const nav = document.querySelector('nav');
@@ -65,7 +58,7 @@ const Navbar = () => {
 			}`}
 				>
 					<ul className="flex flex-col justify-center h-full space-y-4 py-2 text-lg">
-						{menuLinks?.map((menu, i) => (
+						{mobileLinks?.map((menu, i) => (
 							<li
 								onClick={() => setOpen(false)}
 								key={i}

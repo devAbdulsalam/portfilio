@@ -1,9 +1,11 @@
 // // projects images
-import project6 from './assets/projects/chatapp.png';
+import project6 from './assets/projects/messenger.png';
 import project7 from './assets/projects/dashboard.png';
 import project1 from './assets/projects/movie.png';
+import project8 from './assets/projects/jobsearch.png';
+import fitness from './assets/projects/fitness.jpeg';
 import project2 from './assets/projects/project-2.jpeg';
-import project3 from './assets/projects/project-3.jpg';
+import breakfast from './assets/projects/breakfast.jpeg';
 import project4 from './assets/projects/project-4.jpg';
 import project5 from './assets/projects/project-5.jpeg';
 
@@ -21,8 +23,39 @@ import TestiImage1 from './assets/testimonials/testimonial-1.webp';
 import TestiImage2 from './assets/testimonials/testimonial-2.jpg';
 import TestiImage3 from './assets/testimonials/testimonial-3.webp';
 
+export const menuLinks = [
+	{ name: 'HOME', link: '#home' },
+	{ name: 'ABOUT', link: '#about' },
+	{ name: 'SKILLS', link: '#skills' },
+	{ name: 'PROJECTS', link: '#projects' },
+	{ name: 'TESTIMONIALS', link: '#testimonials' },
+	{ name: 'SERVICES', link: '#services' },
+	{ name: 'CONTACT', link: '#contact' },
+];
+
+export const mobileLinks = [
+	{ name: 'HOME', link: '#home' },
+	{ name: 'ABOUT', link: '#about' },
+	{ name: 'RESUME', link: './resume' },
+	{ name: 'SKILLS', link: '#skills' },
+	{ name: 'PROJECTS', link: '#projects' },
+	{ name: 'TESTIMONIALS', link: '#testimonials' },
+	{ name: 'SERVICES', link: '#services' },
+	{ name: 'CONTACT', link: '#contact' },
+];
+
 // // projects
 export const projects = [
+	{
+		img: project7,
+		name: 'Admin Dashboard App',
+		desc: 'Track your Business information with responsive admin dasboard',
+		overView:
+			'I built this application in React JS and is hosted on GitHub pages.This app features user authentication with firebase as well as the firestore cloud storage database.This application is pulling movie data from an the IMDB movie API and displaying different categories.It features horizontal sliding and a featured selection.The useContext hook is also being implemented for app - wide state management.',
+		techStack: ['MongoDb', 'React', 'Nodejs', 'Material UI'],
+		github_link: 'https://github.com/devabdulsalam/admin-dashboard',
+		live_link: 'https://admin-dashboard-fi46.onrender.com/ ',
+	},
 	{
 		img: project6,
 		name: 'Messenger App',
@@ -33,17 +66,7 @@ export const projects = [
 		github_link: 'https://github.com/devabdulsalam/messenger',
 		live_link: 'https://messenger-drab-five.vercel.app ',
 	},
-	{
-		img: project7,
-		name: 'Admin Dashboard App',
-		desc: 'Track your Business information with responsive admin dasboard',
-		overView:
-			'I built this application in React JS and is hosted on GitHub pages.This app features user authentication with firebase as well as the firestore cloud storage database.This application is pulling movie data from an the IMDB movie API and displaying different categories.It features horizontal sliding and a featured selection.The useContext hook is also being implemented for app - wide state management.',
-		techStack: ['tailwind', 'React', 'movie API', 'API'],
-		github_link: 'https://github.com/devabdulsalam/dashboard',
-		live_link: 'https://my-movie-app-tau.vercel.app ',
-		// live_link: "https://myreactflix.netlify.app",
-	},
+
 	{
 		img: project1,
 		name: 'Movie App',
@@ -56,7 +79,7 @@ export const projects = [
 		// live_link: "https://myreactflix.netlify.app",
 	},
 	{
-		img: project2,
+		img: project8,
 		name: 'Job search Web App',
 		desc: 'A solution that helps job seeks and recruiter without hassle',
 		techStack: ['html', 'css', 'javascript'],
@@ -72,10 +95,10 @@ export const projects = [
 		live_link: 'https://queenscollection.netlify.app',
 	},
 	{
-		img: project4,
+		img: fitness,
 		name: 'Fitness',
 		desc: 'This solution is a E-commerce clothing website that sell sport kits, and gears',
-		techStack: ['React', 'local Storagee'],
+		techStack: ['HTML', 'CSS', 'JavaScript', 'Swiperjs', 'AoS'],
 		github_link: 'https://github.com/devAbdulsalam/fitness.git',
 		live_link: 'https://sport-center.netlify.app',
 	},
@@ -100,11 +123,10 @@ export const allProjects = [
 	{
 		img: project1,
 		name: 'Techstuff',
-		desc: 'Blog site to post all your tech relate topics',
+		desc: 'A full stack Blog site to post all your tech relate topics, with functionalities of post, edit, likes, comment etc.',
 		techStack: ['Tailwindcss', 'MoongoDB', ' Expressjs', 'React', 'Nodejs'],
 		github_link: 'https://github.com/devabdulsalam/techstuff',
 		live_link: 'https://techstuff.vercel.app ',
-		// live_link: 'https://myreactflix.netlify.app',
 	},
 	{
 		img: project5,
@@ -115,12 +137,12 @@ export const allProjects = [
 		live_link: 'https://phone-book-with-react.vercel.app/',
 	},
 	{
-		img: project3,
+		img: breakfast,
 		name: 'BreakFast Resturant',
 		desc: 'This solution is a platform that allows people order African dishes anywhere, anytime',
 		techStack: ['tailwind', 'javaScript', 'pigination'],
-		github_link: 'https://github.com/',
-		live_link: 'https://breakfast.vercel.app',
+		github_link: 'https://github.com/devabdulsalam/foodie',
+		live_link: 'https://foodie-z8m0.onrender.com/',
 	},
 	{
 		img: project4,
@@ -143,8 +165,8 @@ export const allProjects = [
 		name: 'Portfolio',
 		desc: 'My portfolio website, design',
 		techStack: ['React', 'React router', 'swiper', 'animation on scroll'],
-		github_link: 'https://github.com/devAbdulsalam/fitness.git',
-		live_link: 'https://sport-center.netlify.app',
+		github_link: 'https://github.com/devAbdulsalam/portfolio.git',
+		live_link: 'https://devabdulsalam.vercel.app',
 	},
 ];
 
@@ -203,7 +225,8 @@ export const services = [
 	{
 		icon: 'fa-database',
 		name: 'Research/Data Analysis',
-		description: 'Research and analyze data to create intuitive, inclusive web solution for better user experience.',
+		description:
+			'Research and analyze data to create intuitive, inclusive web solution for better user experience.',
 	},
 ];
 
