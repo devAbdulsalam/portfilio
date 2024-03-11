@@ -26,7 +26,7 @@ const Project = () => {
 					 className="w-full grid md:grid-cols-3 justify-center gap-2 grid-flow-row relative"
 				>
 					{projects.map((project_info, i) => (
-						<div key={i} className="group">
+						<div key={i} className="group z-10 relative">
 							<div className=" h-fit w-full p-4 bg-slate-700 rounded-xl relative">
 								<img
 									src={project_info.img}

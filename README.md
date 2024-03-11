@@ -1,4 +1,4 @@
-# react_portfolio
+# my react portfolio
 
 live preview : https://devabdulsalam.vercel.app
 

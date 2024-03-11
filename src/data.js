@@ -4,9 +4,11 @@ import project7 from './assets/projects/dashboard.png';
 import project1 from './assets/projects/movie.png';
 import project8 from './assets/projects/jobsearch.png';
 import fitness from './assets/projects/fitness.jpeg';
-import project2 from './assets/projects/project-2.jpeg';
+import estore from './assets/projects/estore.jpeg';
 import breakfast from './assets/projects/breakfast.jpeg';
+import election from './assets/projects/election.jpeg';
 import project4 from './assets/projects/project-4.jpg';
+import project2 from './assets/projects/project-2.jpeg';
 import project5 from './assets/projects/project-5.jpeg';
 
 // // skills images
@@ -76,7 +78,6 @@ export const projects = [
 		techStack: ['tailwind', 'React', 'movie API', 'API'],
 		github_link: 'https://github.com/devabdulsalam/movie',
 		live_link: 'https://my-movie-app-tau.vercel.app ',
-		// live_link: "https://myreactflix.netlify.app",
 	},
 	{
 		img: project8,
@@ -87,12 +88,12 @@ export const projects = [
 		live_link: 'https://myjobsearch.vercel.app',
 	},
 	{
-		img: project4,
+		img: estore,
 		name: 'Queens Collections',
-		desc: 'This solution is a E-commerce clothing website',
-		techStack: ['tailwind', 'javaScript'],
-		github_link: 'https://github.com/',
-		live_link: 'https://queenscollection.netlify.app',
+		desc: 'This solution is a E-commerce clothing website, with various categories.',
+		techStack: ['HTML', 'CSS', 'javaScript'],
+		github_link: 'https://github.com/devAbdulsalam/queenscollections',
+		live_link: 'https://ecommerce-1aq1.onrender.com/',
 	},
 	{
 		img: fitness,
@@ -106,6 +107,30 @@ export const projects = [
 
 // // projects
 export const allProjects = [
+	{
+		img: election,
+		name: 'Election App',
+		desc: 'This solution is a platform that provides users infomation about elections, parties involve, political candidates, allows users vote and access realtime election result',
+		techStack: ['tailwind', 'javaScript', 'pigination'],
+		github_link: 'https://github.com/devabdulsalam/foodie',
+		live_link: 'https://foodie-z8m0.onrender.com/',
+	},
+	{
+		img: project1,
+		name: 'Techstuff',
+		desc: 'A full stack Blog site to post all your tech relate topics, with functionalities of post, edit, likes, comment etc.',
+		techStack: ['Tailwindcss', 'MoongoDB', ' Expressjs', 'React', 'Nodejs'],
+		github_link: 'https://github.com/devabdulsalam/techstuff',
+		live_link: 'https://techstuff.vercel.app ',
+	},
+	{
+		img: breakfast,
+		name: 'BreakFast Resturant',
+		desc: 'This solution is a platform that allows people order African dishes anywhere, anytime',
+		techStack: ['tailwind', 'javaScript', 'pigination'],
+		github_link: 'https://github.com/devabdulsalam/foodie',
+		live_link: 'https://foodie-z8m0.onrender.com/',
+	},
 	{
 		img: project2,
 		name: 'Momentum',
@@ -121,28 +146,12 @@ export const allProjects = [
 		live_link: 'https://dmomentum.netlify.app',
 	},
 	{
-		img: project1,
-		name: 'Techstuff',
-		desc: 'A full stack Blog site to post all your tech relate topics, with functionalities of post, edit, likes, comment etc.',
-		techStack: ['Tailwindcss', 'MoongoDB', ' Expressjs', 'React', 'Nodejs'],
-		github_link: 'https://github.com/devabdulsalam/techstuff',
-		live_link: 'https://techstuff.vercel.app ',
-	},
-	{
 		img: project5,
 		name: 'Phone book',
 		desc: 'A contact book where user can save contact, edit contact, make call to phone numbers',
 		techStack: ['tailwind', 'React', 'Your local Storagee'],
 		github_link: 'https://github.com/devAbdulsalam/phone-book-with-react.git',
 		live_link: 'https://phone-book-with-react.vercel.app/',
-	},
-	{
-		img: breakfast,
-		name: 'BreakFast Resturant',
-		desc: 'This solution is a platform that allows people order African dishes anywhere, anytime',
-		techStack: ['tailwind', 'javaScript', 'pigination'],
-		github_link: 'https://github.com/devabdulsalam/foodie',
-		live_link: 'https://foodie-z8m0.onrender.com/',
 	},
 	{
 		img: project4,
@@ -266,7 +275,7 @@ export const contact_info = [
 	{
 		logo: 'mail',
 		text: 'devabdulsalam74@gmail.com',
-		link: 'https:mailto/ammuftau74@gmail.com',
+		link: 'https:mailto:ammuftau74@gmail.com',
 	},
 	{
 		logo: 'logo-whatsapp',

@@ -33,23 +33,36 @@ const Projects = () => {
 					>
 						{projects.map((project_info, i) => (
 							<div key={i} className="group">
-								<div className=" h-fit w-full p-4 bg-slate-700 rounded-xl relative m-2">
+								<div className=" h-fit w-full p-4 bg-slate-700 rounded-xl relative">
 									<img
 										src={project_info.img}
 										alt={project_info.name}
-										className="rounded-lg h-[350px] w-full"
+										className="rounded-lg h-[320px] md:h-[350px] w-full"
 									/>
-									<h3 className="text-xl my-1 group-hover:text-cyan-600 font-semibold">
-										{project_info.name}
-									</h3>
-									<p className="mb-3">{project_info.desc}</p>
-									<p className="mb-3">
-										{project_info.techStack.map((stack, index) => (
-											<span key={index} className="text-blue-500">
-												{stack}{' '}
-											</span>
-										))}
-									</p>
+									<div className="overlay flex justify-center p-1 bg-transparent group-hover:bg-slate-700 items-center flex-col absolute w-full h-full rounded-xl left-0 -bottom-1/2 invisible duration-500 group-hover:visible group-hover:bottom-0 -translate-X-1/2">
+										<h3 className="text-xl md:text-2xl m-1 group-hover:text-cyan-600 font-bold">
+											{project_info.name}
+										</h3>
+										<p className="mb-3 px-4">{project_info.desc}</p>
+										<div className="flex gap-3 z-50">
+											<a
+												href={project_info.github_link}
+												target="_blank"
+												rel="noreferrer"
+												className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
+											>
+												Github
+											</a>
+											<a
+												href={project_info.live_link}
+												target="_blank"
+												rel="noreferrer"
+												className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
+											>
+												Live Demo
+											</a>
+										</div>
+									</div>
 									<div className="flex gap-3 py-4">
 										<a
 											href={project_info.github_link}
@@ -72,7 +85,7 @@ const Projects = () => {
 							</div>
 						))}
 					</div>
-					<hr />
+					<hr className="bg-white text-white" />
 					<div
 						data-aos="fade-right"
 						className="w-full md:grid grid-cols-3 space-x-2 space-y-2 justify-between"
